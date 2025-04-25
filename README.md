@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+## 🚀 Características Principales
+- **Transferencias seguras** entre usuarios con validación de saldo en tiempo real
+- Historial completo de **transacciones** (enviadas/recibidas)
+- Sistema de **comisiones** automático por transferencia
+- Interfaz **responsive** construida con Bulma CSS
+- Gestión de **contactos frecuentes**
+- Visualización de **saldo disponible** con formato monetario
+- **Modales interactivos** para confirmación de operaciones
 
-First, run the development server:
+## 🛠 Tecnologías Utilizadas
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Frontend
+| Tecnología | Versión | Uso |
+|------------|---------|-----|
+| Next.js | 15.3.1 | Framework principal |
+| React | 19 | Librería UI |
+| TypeScript | 5 | Tipado estático |
+| Bulma CSS | 1.0.4 | Estilos y componentes |
+| Fetch API | - | Conexión con backend |
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Instalar dependencias:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+  npm install
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🌱 Levantar el Proyecto Localmente
 
-## Learn More
+  npm run dev
 
-To learn more about Next.js, take a look at the following resources:
+## 📜 Comandos Útiles
+  Iniciar el sistema en desarrollo:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+  npm run dev
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🏗 Endpoints API
+/transacciones/transferir	POST	{ cuentaOrigenId, cuentaDestinoId, monto }	Realiza transferencia
+/transacciones/realizadas/:id	GET	-	Obtiene transferencias enviadas
+/transacciones/recibidas/:id	GET	-	Obtiene transferencias recibidas
+/comisiones/historial/:id	GET	-	Obtiene historial de comisiones
+/contactos	GET	-	Obtiene lista de contactos
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Aclaraciones
+Como se trabajo en un entorno de desarollo el frontend solo funciona con este backend y ambos de forma local en modo desarollo  es decir localhost
