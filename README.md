@@ -40,4 +40,4 @@ Instalar dependencias:
 /contactos	GET	-	Obtiene lista de contactos
 
 ## Aclaraciones
-Como se trabajo en un entorno de desarollo el frontend solo funciona con este backend y ambos de forma local en modo desarollo  es decir localhost
+Como se trabajo en un entorno de desarollo el frontend solo funciona con el backend (https://github.com/Osvaldo-Barral/banexcoin-backend) y ambos de forma local en modo desarollo es decir localhost
